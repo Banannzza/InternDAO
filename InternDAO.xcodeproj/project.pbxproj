@@ -1,0 +1,708 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40A533442041AE2E00B5F22C /* InternDAO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A5333A2041AE2D00B5F22C /* InternDAO.framework */; };
+		40A5334B2041AE2E00B5F22C /* InternDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 40A5333D2041AE2D00B5F22C /* InternDAO.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40A5335D2041AE3B00B5F22C /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A533562041AE3B00B5F22C /* Entity.swift */; };
+		40A5335E2041AE3B00B5F22C /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A533572041AE3B00B5F22C /* DAO.swift */; };
+		40A5335F2041AE3B00B5F22C /* CouchbaseDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A5335A2041AE3B00B5F22C /* CouchbaseDAO.swift */; };
+		40A533602041AE3B00B5F22C /* CouchbaseTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A5335C2041AE3B00B5F22C /* CouchbaseTranslator.swift */; };
+		40A5337120431C5A00B5F22C /* SQLiteDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A5337020431C5A00B5F22C /* SQLiteDAO.swift */; };
+		40A533742043225F00B5F22C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A533722043225F00B5F22C /* libsqlite3.tbd */; };
+		40A533752043225F00B5F22C /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A533732043225F00B5F22C /* libsqlite3.0.tbd */; };
+		40A5337B20434DB700B5F22C /* SQLiteTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A5337A20434DB700B5F22C /* SQLiteTranslator.swift */; };
+		40A533832043FA1000B5F22C /* SQLiteEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A533822043FA1000B5F22C /* SQLiteEntry.swift */; };
+		40A533872043FB1E00B5F22C /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A533862043FB1E00B5F22C /* TestObject.swift */; };
+		40A533892043FDB500B5F22C /* SQLiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A533882043FDB500B5F22C /* SQLiteTests.swift */; };
+		40A5338B2043FE6300B5F22C /* TestObjectSQLiteTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A5338A2043FE6300B5F22C /* TestObjectSQLiteTranslator.swift */; };
+		40A5338E20443B5600B5F22C /* TestObjectCouchbaseTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A5338D20443B5600B5F22C /* TestObjectCouchbaseTranslator.swift */; };
+		40A5339020443C2800B5F22C /* CouchbaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A5338F20443C2800B5F22C /* CouchbaseTests.swift */; };
+		8E68B9B5A7838395F2124317 /* Pods_InternDAO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01409FB734C3EA9434B7FDED /* Pods_InternDAO.framework */; };
+		F2851EF5F4566FEA852776C3 /* Pods_InternDAOTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4144AE44954AD6E3CF9A1A66 /* Pods_InternDAOTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40A533452041AE2E00B5F22C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40A533312041AE2D00B5F22C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40A533392041AE2D00B5F22C;
+			remoteInfo = InternDAO;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01409FB734C3EA9434B7FDED /* Pods_InternDAO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InternDAO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25D9CD212E7501FA123E4EF1 /* Pods-InternDAO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InternDAO.release.xcconfig"; path = "Pods/Target Support Files/Pods-InternDAO/Pods-InternDAO.release.xcconfig"; sourceTree = "<group>"; };
+		40A5333A2041AE2D00B5F22C /* InternDAO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InternDAO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40A5333D2041AE2D00B5F22C /* InternDAO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InternDAO.h; sourceTree = "<group>"; };
+		40A5333E2041AE2D00B5F22C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40A533432041AE2E00B5F22C /* InternDAOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InternDAOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		40A5334A2041AE2E00B5F22C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40A533562041AE3B00B5F22C /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		40A533572041AE3B00B5F22C /* DAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
+		40A5335A2041AE3B00B5F22C /* CouchbaseDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouchbaseDAO.swift; sourceTree = "<group>"; };
+		40A5335C2041AE3B00B5F22C /* CouchbaseTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouchbaseTranslator.swift; sourceTree = "<group>"; };
+		40A5337020431C5A00B5F22C /* SQLiteDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDAO.swift; sourceTree = "<group>"; };
+		40A533722043225F00B5F22C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		40A533732043225F00B5F22C /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		40A5337A20434DB700B5F22C /* SQLiteTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteTranslator.swift; sourceTree = "<group>"; };
+		40A533822043FA1000B5F22C /* SQLiteEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteEntry.swift; sourceTree = "<group>"; };
+		40A533862043FB1E00B5F22C /* TestObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestObject.swift; sourceTree = "<group>"; };
+		40A533882043FDB500B5F22C /* SQLiteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteTests.swift; sourceTree = "<group>"; };
+		40A5338A2043FE6300B5F22C /* TestObjectSQLiteTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestObjectSQLiteTranslator.swift; sourceTree = "<group>"; };
+		40A5338D20443B5600B5F22C /* TestObjectCouchbaseTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestObjectCouchbaseTranslator.swift; sourceTree = "<group>"; };
+		40A5338F20443C2800B5F22C /* CouchbaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouchbaseTests.swift; sourceTree = "<group>"; };
+		4144AE44954AD6E3CF9A1A66 /* Pods_InternDAOTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InternDAOTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		730987A30C7B7D32ED6A6C92 /* Pods-InternDAO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InternDAO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InternDAO/Pods-InternDAO.debug.xcconfig"; sourceTree = "<group>"; };
+		BB209F1C1A40979ED54008C8 /* Pods-InternDAOTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InternDAOTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InternDAOTests/Pods-InternDAOTests.release.xcconfig"; sourceTree = "<group>"; };
+		FC2051F777800E8466EDC6FD /* Pods-InternDAOTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InternDAOTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InternDAOTests/Pods-InternDAOTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40A533362041AE2D00B5F22C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40A533742043225F00B5F22C /* libsqlite3.tbd in Frameworks */,
+				40A533752043225F00B5F22C /* libsqlite3.0.tbd in Frameworks */,
+				8E68B9B5A7838395F2124317 /* Pods_InternDAO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40A533402041AE2E00B5F22C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40A533442041AE2E00B5F22C /* InternDAO.framework in Frameworks */,
+				F2851EF5F4566FEA852776C3 /* Pods_InternDAOTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40A533302041AE2D00B5F22C = {
+			isa = PBXGroup;
+			children = (
+				40A5333C2041AE2D00B5F22C /* InternDAO */,
+				40A533472041AE2E00B5F22C /* InternDAOTests */,
+				40A5333B2041AE2D00B5F22C /* Products */,
+				75B9DC9C442225946B704434 /* Pods */,
+				DA8C3965474A9E0EFCD79B8D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		40A5333B2041AE2D00B5F22C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40A5333A2041AE2D00B5F22C /* InternDAO.framework */,
+				40A533432041AE2E00B5F22C /* InternDAOTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40A5333C2041AE2D00B5F22C /* InternDAO */ = {
+			isa = PBXGroup;
+			children = (
+				40A533542041AE3B00B5F22C /* Classes */,
+				40A5333D2041AE2D00B5F22C /* InternDAO.h */,
+				40A5333E2041AE2D00B5F22C /* Info.plist */,
+			);
+			path = InternDAO;
+			sourceTree = "<group>";
+		};
+		40A533472041AE2E00B5F22C /* InternDAOTests */ = {
+			isa = PBXGroup;
+			children = (
+				40A533852043FB0A00B5F22C /* Test Object */,
+				40A5338C20443B3F00B5F22C /* Couchbase */,
+				40A533842043FAFC00B5F22C /* SQLite */,
+				40A5334A2041AE2E00B5F22C /* Info.plist */,
+			);
+			path = InternDAOTests;
+			sourceTree = "<group>";
+		};
+		40A533542041AE3B00B5F22C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				40A533552041AE3B00B5F22C /* Core */,
+				40A5336E20431C3500B5F22C /* SQLiteDAO */,
+				40A533582041AE3B00B5F22C /* CouchbaseDAO */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		40A533552041AE3B00B5F22C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				40A533562041AE3B00B5F22C /* Entity.swift */,
+				40A533572041AE3B00B5F22C /* DAO.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		40A533582041AE3B00B5F22C /* CouchbaseDAO */ = {
+			isa = PBXGroup;
+			children = (
+				40A533592041AE3B00B5F22C /* DAO */,
+				40A5335B2041AE3B00B5F22C /* Translator */,
+			);
+			path = CouchbaseDAO;
+			sourceTree = "<group>";
+		};
+		40A533592041AE3B00B5F22C /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				40A5335A2041AE3B00B5F22C /* CouchbaseDAO.swift */,
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
+		40A5335B2041AE3B00B5F22C /* Translator */ = {
+			isa = PBXGroup;
+			children = (
+				40A5335C2041AE3B00B5F22C /* CouchbaseTranslator.swift */,
+			);
+			path = Translator;
+			sourceTree = "<group>";
+		};
+		40A5336E20431C3500B5F22C /* SQLiteDAO */ = {
+			isa = PBXGroup;
+			children = (
+				40A5337C20434E2A00B5F22C /* Entry */,
+				40A5337920434DA900B5F22C /* Translator */,
+				40A5336F20431C4400B5F22C /* DAO */,
+			);
+			path = SQLiteDAO;
+			sourceTree = "<group>";
+		};
+		40A5336F20431C4400B5F22C /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				40A5337020431C5A00B5F22C /* SQLiteDAO.swift */,
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
+		40A5337920434DA900B5F22C /* Translator */ = {
+			isa = PBXGroup;
+			children = (
+				40A5337A20434DB700B5F22C /* SQLiteTranslator.swift */,
+			);
+			path = Translator;
+			sourceTree = "<group>";
+		};
+		40A5337C20434E2A00B5F22C /* Entry */ = {
+			isa = PBXGroup;
+			children = (
+				40A533822043FA1000B5F22C /* SQLiteEntry.swift */,
+			);
+			path = Entry;
+			sourceTree = "<group>";
+		};
+		40A533842043FAFC00B5F22C /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				40A533882043FDB500B5F22C /* SQLiteTests.swift */,
+				40A5338A2043FE6300B5F22C /* TestObjectSQLiteTranslator.swift */,
+			);
+			path = SQLite;
+			sourceTree = "<group>";
+		};
+		40A533852043FB0A00B5F22C /* Test Object */ = {
+			isa = PBXGroup;
+			children = (
+				40A533862043FB1E00B5F22C /* TestObject.swift */,
+			);
+			path = "Test Object";
+			sourceTree = "<group>";
+		};
+		40A5338C20443B3F00B5F22C /* Couchbase */ = {
+			isa = PBXGroup;
+			children = (
+				40A5338D20443B5600B5F22C /* TestObjectCouchbaseTranslator.swift */,
+				40A5338F20443C2800B5F22C /* CouchbaseTests.swift */,
+			);
+			path = Couchbase;
+			sourceTree = "<group>";
+		};
+		75B9DC9C442225946B704434 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				730987A30C7B7D32ED6A6C92 /* Pods-InternDAO.debug.xcconfig */,
+				25D9CD212E7501FA123E4EF1 /* Pods-InternDAO.release.xcconfig */,
+				FC2051F777800E8466EDC6FD /* Pods-InternDAOTests.debug.xcconfig */,
+				BB209F1C1A40979ED54008C8 /* Pods-InternDAOTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DA8C3965474A9E0EFCD79B8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40A533732043225F00B5F22C /* libsqlite3.0.tbd */,
+				40A533722043225F00B5F22C /* libsqlite3.tbd */,
+				01409FB734C3EA9434B7FDED /* Pods_InternDAO.framework */,
+				4144AE44954AD6E3CF9A1A66 /* Pods_InternDAOTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		40A533372041AE2D00B5F22C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40A5334B2041AE2E00B5F22C /* InternDAO.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		40A533392041AE2D00B5F22C /* InternDAO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40A5334E2041AE2E00B5F22C /* Build configuration list for PBXNativeTarget "InternDAO" */;
+			buildPhases = (
+				92E3A2710119663F0FC44481 /* [CP] Check Pods Manifest.lock */,
+				40A533352041AE2D00B5F22C /* Sources */,
+				40A533362041AE2D00B5F22C /* Frameworks */,
+				40A533372041AE2D00B5F22C /* Headers */,
+				40A533382041AE2D00B5F22C /* Resources */,
+				CA3E8BB8F586A0069032F113 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InternDAO;
+			productName = InternDAO;
+			productReference = 40A5333A2041AE2D00B5F22C /* InternDAO.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		40A533422041AE2E00B5F22C /* InternDAOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40A533512041AE2E00B5F22C /* Build configuration list for PBXNativeTarget "InternDAOTests" */;
+			buildPhases = (
+				3D63995A3543D01B090C801F /* [CP] Check Pods Manifest.lock */,
+				40A5333F2041AE2E00B5F22C /* Sources */,
+				40A533402041AE2E00B5F22C /* Frameworks */,
+				40A533412041AE2E00B5F22C /* Resources */,
+				50950FB1886AA9B52DB23DAF /* [CP] Embed Pods Frameworks */,
+				94CF24137B8FB1DA65CD5D2E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40A533462041AE2E00B5F22C /* PBXTargetDependency */,
+			);
+			name = InternDAOTests;
+			productName = InternDAOTests;
+			productReference = 40A533432041AE2E00B5F22C /* InternDAOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40A533312041AE2D00B5F22C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Алексей Остапенко";
+				TargetAttributes = {
+					40A533392041AE2D00B5F22C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					40A533422041AE2E00B5F22C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 40A533342041AE2D00B5F22C /* Build configuration list for PBXProject "InternDAO" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 40A533302041AE2D00B5F22C;
+			productRefGroup = 40A5333B2041AE2D00B5F22C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40A533392041AE2D00B5F22C /* InternDAO */,
+				40A533422041AE2E00B5F22C /* InternDAOTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40A533382041AE2D00B5F22C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40A533412041AE2E00B5F22C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D63995A3543D01B090C801F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		50950FB1886AA9B52DB23DAF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InternDAOTests/Pods-InternDAOTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92E3A2710119663F0FC44481 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		94CF24137B8FB1DA65CD5D2E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InternDAOTests/Pods-InternDAOTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA3E8BB8F586A0069032F113 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InternDAO/Pods-InternDAO-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40A533352041AE2D00B5F22C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40A5335F2041AE3B00B5F22C /* CouchbaseDAO.swift in Sources */,
+				40A5335E2041AE3B00B5F22C /* DAO.swift in Sources */,
+				40A5337120431C5A00B5F22C /* SQLiteDAO.swift in Sources */,
+				40A533832043FA1000B5F22C /* SQLiteEntry.swift in Sources */,
+				40A5337B20434DB700B5F22C /* SQLiteTranslator.swift in Sources */,
+				40A5335D2041AE3B00B5F22C /* Entity.swift in Sources */,
+				40A533602041AE3B00B5F22C /* CouchbaseTranslator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40A5333F2041AE2E00B5F22C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40A5338E20443B5600B5F22C /* TestObjectCouchbaseTranslator.swift in Sources */,
+				40A5338B2043FE6300B5F22C /* TestObjectSQLiteTranslator.swift in Sources */,
+				40A533872043FB1E00B5F22C /* TestObject.swift in Sources */,
+				40A5339020443C2800B5F22C /* CouchbaseTests.swift in Sources */,
+				40A533892043FDB500B5F22C /* SQLiteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40A533462041AE2E00B5F22C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40A533392041AE2D00B5F22C /* InternDAO */;
+			targetProxy = 40A533452041AE2E00B5F22C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		40A5334C2041AE2E00B5F22C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		40A5334D2041AE2E00B5F22C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		40A5334F2041AE2E00B5F22C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 730987A30C7B7D32ED6A6C92 /* Pods-InternDAO.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = KKM885JPV8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = InternDAO/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "rmr-intern.InternDAO";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		40A533502041AE2E00B5F22C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25D9CD212E7501FA123E4EF1 /* Pods-InternDAO.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = KKM885JPV8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = InternDAO/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "rmr-intern.InternDAO";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		40A533522041AE2E00B5F22C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC2051F777800E8466EDC6FD /* Pods-InternDAOTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KKM885JPV8;
+				INFOPLIST_FILE = InternDAOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "rmr-intern.InternDAOTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		40A533532041AE2E00B5F22C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB209F1C1A40979ED54008C8 /* Pods-InternDAOTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KKM885JPV8;
+				INFOPLIST_FILE = InternDAOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "rmr-intern.InternDAOTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40A533342041AE2D00B5F22C /* Build configuration list for PBXProject "InternDAO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40A5334C2041AE2E00B5F22C /* Debug */,
+				40A5334D2041AE2E00B5F22C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40A5334E2041AE2E00B5F22C /* Build configuration list for PBXNativeTarget "InternDAO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40A5334F2041AE2E00B5F22C /* Debug */,
+				40A533502041AE2E00B5F22C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40A533512041AE2E00B5F22C /* Build configuration list for PBXNativeTarget "InternDAOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40A533522041AE2E00B5F22C /* Debug */,
+				40A533532041AE2E00B5F22C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40A533312041AE2D00B5F22C /* Project object */;
+}
