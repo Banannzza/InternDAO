@@ -1,0 +1,24 @@
+PODS:
+  - CouchbaseLiteSwift (2.0DB021)
+
+DEPENDENCIES:
+  - CouchbaseLiteSwift (from `https://github.com/couchbase/couchbase-lite-ios.git`, tag `2.0DB022`)
+
+EXTERNAL SOURCES:
+  CouchbaseLiteSwift:
+    :git: https://github.com/couchbase/couchbase-lite-ios.git
+    :submodules: true
+    :tag: 2.0DB022
+
+CHECKOUT OPTIONS:
+  CouchbaseLiteSwift:
+    :git: https://github.com/couchbase/couchbase-lite-ios.git
+    :submodules: true
+    :tag: 2.0DB022
+
+SPEC CHECKSUMS:
+  CouchbaseLiteSwift: f5069ec97904605ffd714836726038dae54fc9e6
+
+PODFILE CHECKSUM: 2ad98e2f47097c1ebe71cce8b7e4faedce76dd97
+
+COCOAPODS: 1.2.1

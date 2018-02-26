@@ -1,0 +1,6 @@
+framework module Pods_InternDAO {
+  umbrella header "Pods-InternDAO-umbrella.h"
+
+  export *
+  module * { export * }
+}
